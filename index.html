@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            max-width: 960px; /* Ancho fijo del contenedor */
+            margin-left: auto; /* Centrar el contenedor */
+            margin-right: auto; /* Centrar el contenedor */
+        }
+  
+        .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 960px; /* Ancho fijo del contenedor */
+    margin-left: auto; /* Centrar el contenedor */
+    margin-right: auto; /* Centrar el contenedor */
+}
+
+.grid-item {
+    text-align: center;
+    width: calc(33.33% - 10px); /* Calcula el ancho de cada elemento con 10px de espacio entre ellos */
+    margin-bottom: 20px; /* Espacio entre los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .grid-item {
+        width: calc(50% - 10px); /* Dos columnas en dispositivos de hasta 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        width: 100%; /* Una columna en dispositivos de hasta 480px */
+    }
+}
+
+
+        .footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section {
+            text-align: left; /* Alinea el texto a la izquierda */
+            margin-top: 40px;
+            margin-left: 20px; /* Añade margen izquierdo */
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="fotos/fotoencabezado.png" alt="Imagen Aules">
+        <h1>¿Qué es Aules?</h1>
+        <p>Aules es un lugar destinado al e-learning, con vocación de universalidad, sencillez y accesibilidad desde cualquier dispositivo.</p>
+        
+        <h2>Acceso a la plataforma:</h2>
+        <p>Mediante cualquiera de los "sabores" que os aparecen a continuación según la enseñanza. Si aún no sabes cómo acceder o tienes problemas con el nombre de usuario o la contraseña, lee más abajo.</p>
+        
+        <div class="grid">
+            <div class="grid-item">
+                <a href="#"><img src="fotos/infantil.jpg" alt="infantil"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/primaria.jpg" alt="primaria"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/eso.png" alt="eso"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/bachillerato.png" alt="bachillerato"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/fp.png" alt="fp"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/fpsemi.png" alt="fpsemi"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/fpa.png" alt="fpa"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/especiales.png" alt="especiales"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/adistancia.jpg" alt="adistancia"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/profesorado.jpg" alt="profesorado"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/autoform.png" alt="autoform"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/Docente.png" alt="Docente"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/eoi.png" alt="eoi"></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="fotos/isea.png" alt="isea"></a>
+            </div>
+            
+            <!-- Aquí colocamos espacios vacíos en la tercera columna -->
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <!-- Repite este bloque para las otras imágenes -->
+            <!-- Hasta aquí -->
+        </div>
+        
+		<div class="section">
+            <h3 class="section-title">1. Usuario/a manual (alumnado matriculado en Itaca)</h3>
+            <p>
+				El nombre de usuario es tu NIA. La contraseña inicial son las 3 primeras letras de tu apellido en minúscula, seguidas de tu fecha de nacimiento (dos cifras para el día, dos para el mes y dos para el año). Al acceder por primera vez, debes cambiar tu contraseña.
+				Si tienes problemas con la contraseña, haz clic en el enlace "¿Olvidó su nombre de usuario o contraseña?" que encontrarás en la página de acceso de tu sabor de Aules y sigue las instrucciones.
+				En caso de no recibir ningún correo de confirmación, contacta con el profesorado del curso.
+				En caso de recibir un correo indicando que "en este sitio no se pueden cambiar las contraseñas", prueba con el método 2.</p>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">2. Usuario/a GVA (docentes)</h3>
+            <p>Accede a Aules con tu DNI/NIE i la clave de Itaca.
+				Si no recuerdas tu contraseña, sigue este enlace:
+				https://acces.edu.gva.es/escriptori
+				Desde este enlace podrás reiniciar tu contraseña mediante uno de estos métodos: DNI/NIE, identidad digital, certificado digital o Cl@ve.</p>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">3. Otros/as usuarios/as - </h3>
+            <p>Si no recuerdas tu nombre de usuario o la contraseña, comunícalo mediante una incidencia a GVA-SAI: https://gvasai.edu.gva.es</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy;2024 Generalitat
+
+			Conselleria de Educación, Universidades y Empleo</p>
+    </footer>
+</body>
+</html>
